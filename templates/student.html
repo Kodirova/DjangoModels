@@ -1,0 +1,15 @@
+{% extends "base.html " %}
+{% block content %}
+<ul>
+    {% for item in data %}
+    <li>
+       {{item.full_name}}, {{item.level}}, {{item.dob}}
+    </li>
+    {% endfor %}
+    <h1>
+         {{data2}}
+    </h1>
+
+</ul>
+{% endblock %}
+
